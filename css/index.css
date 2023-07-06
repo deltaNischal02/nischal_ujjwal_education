@@ -16,9 +16,9 @@ html {
   background-size: cover;
   /* Additional properties to adjust positioning if needed */
   background-position: center center;
-  object-fit: fill;
-  opacity: 10;
-  background-position: center top 2px;
+  /* object-fit: fill; */
+  /* opacity: 50%; */
+  background-position: center top 0px;
 
 }
 
@@ -67,6 +67,8 @@ hr {
 
 .empoweringText {
     font-size: 40px;
+    background-color: white;
+    opacity: 50%;
 }
 
 .youngText {
@@ -75,6 +77,8 @@ hr {
     font-size: 40px;
     top: 50px;
     overflow: hidden;
+    background-color: white;
+    opacity: 60%;
 }
 
 .youngText::after {
@@ -134,6 +138,10 @@ hr {
     font-size: 25px;
     top: 500px;
 }
+/* .estd h6{
+    top: -80px;
+    position: absolute;
+} */
 
 .Learnmore {
     position: relative;
@@ -170,6 +178,31 @@ hr {
     top: 50em;
     left: 50px;
 }
+/* css for increasing number */
+.NumberSection{
+    height: 30vh;
+    background-color: #235789;
+}
+.increase-Number-Container{
+    height: 100%;
+    width: auto;
+    border: 2px rgb(0, 0, 0) solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Number-Container{
+    height: 80%;
+    width: 450px;
+    box-shadow: inset 1px 5px 10px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Number-Container img{
+    height: 50%;
+}
+
 
 
 /* section for thirdsection */
@@ -178,15 +211,25 @@ hr {
     /* background-color: #c54e4e; */
     background-color: #FDFFFC;
     height: 30vh;
+    background-image: linear-gradient(to right,#235789, #C1292E) 2;
 }
 .apart{
     position: relative;
     left: 35%;
 }
-.apart::before{
-    
+.apart::after{
+    content: '';
+    display: block;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(to right,#235789, #C1292E) 2;
+    width: 150px; /* Adjust the width as desired */
+    position: absolute;
+    padding-bottom: 10px;
+    /* bottom: 20; */
+    left: 150px;
+    height: 2px;
 }
-.UE{
+.UE {
     font-weight:bold;
 }
 
@@ -199,8 +242,8 @@ hr {
     justify-content: space-evenly;
     border-bottom: 2px solid rgb(255, 255, 255);
     border-image: linear-gradient(to right, #DF9A57, #C1292E) 2;
-   
-    backdrop-filter: blur(8px);
+
+    /* backdrop-filter: blur(8px); */
     background-color: transparent;
     height: 400px;
     z-index: 1;
@@ -327,8 +370,7 @@ hr {
 .slider .slider-track{
     animation: scroll 50s linear infinite ;
     display: flex;
-    /* width: calc(3000px * 5); */
-    /* border: 2px dashed rgb(16, 117, 26); */
+    
     align-items: end;
     justify-content: baseline;
 }
@@ -340,6 +382,7 @@ hr {
     height: 100px;
     width: 250px;
 }
+
 @keyframes scroll{
     0%{
         transform: translateX(0);
