@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    /* width: 100%; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.upperSection {
+    height: 100vh;
+    z-index: 1;
+    background-color: #f7f7f7;
+}
+
+.image-container {
+    position: absolute;
+    top: 120px;
+    right: 530px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110px;
+}
+
+.image1 img {
+    height: 100%;
+    width: 115px;
+}
+
+hr {
+    position: absolute;
+
+    height: 67px;
+    right: 275px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.image2 img {
+    width: 310px;
+    height: 100%;
+}
+
+.text-contain {
+    position: absolute;
+    top: 300px;
+    left: 620px;
+    /* border: 2px dashed red; */
+}
+
+.text-contain2 {
+    position: absolute;
+    left: 475px;
+    top: 300px;
+    /* border: 2px dashed rgb(0, 0, 255); */
+}
+
+.empoweringText {
+    font-size: 40px;
+}
+
+.youngText {
+    position: relative;
+
+    font-size: 40px;
+    top: 50px;
+    overflow: hidden;
+}
+
+.youngText::after {
+    content: "NEPAL!";
+    display: inline-block;
+    animation: animation 6s steps(15) infinite;
+    width: 6ch;
+    color: red;
+}
+
+.youngText::before {
+    display: inline-block;
+    content: "";
+    width: 2ch;
+    height: 100px;
+    right: 0;
+    position: absolute;
+    animation: blinking 5s linear alternate infinite;
+}
+
+@keyframes animation {
+    25% {
+        content: "NEPAL!";
+        width: 6ch;
+    }
+
+    40% {
+        width: 0ch;
+        color: #235789;
+    }
+
+    50% {
+        content: "FUTURE.";
+        color: #235789;
+        width: 9ch;
+    }
+
+    75% {
+        /* content: "."; */
+        width: 0ch;
+        color: #C1292E;
+    }
+}
+
+@keyframes blinking {
+    100% {
+        opacity: 0;
+        color: rgb(89, 255, 0);
+    }
+}
+
+.estd {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    top: 500px;
+}
+
+.Learnmore {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 625px;
+
+    /* border: 2px dashed red; */
+}
+
+.Learnmore img,
+.Learnmore a {
+    height: 20px;
+
+    color: black;
+    text-decoration: none;
+}
+
+/* css for lowerSection */
+.lowerSection {
+    height: 100vh;
+    z-index: -1;
+    color: yellow;
+}
+
+.unlockText {
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    border: 2px dashed red;
+    position: absolute;
+    width: 50rem;
+    top: 50em;
+    left: 50px;
+}
+
+
+/* section for thirdsection */
+
+.thirdSection {
+    /* background-color: #c54e4e; */
+    background-color: #FDFFFC;
+    height: 30vh;
+}
+.apart{
+    position: relative;
+    left: 35%;
+}
+.apart::before{
+    
+}
+.UE{
+    font-weight:bold;
+}
+
+/* css for card of third section */
+.cardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    justify-content: space-evenly;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-image: linear-gradient(to right, #DF9A57, #C1292E) 2;
+   
+    backdrop-filter: blur(8px);
+    background-color: transparent;
+    height: 400px;
+    z-index: 1;
+    width: 90%;
+    position: absolute;
+    left: 70px;
+    
+}
+
+/* css for cards */
+.card {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 5000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card img {
+    height: 100%;
+    width: 100%;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .card:hover svg {
+    scale: 0;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+  
+.fourthSection{
+    height: 50vh;
+    background-color: #235789;
+}
+/* css for partners scrtion */
+.partnerSection{
+    
+    text-align: center;
+    height: 30vh;
+    align-items: baseline;
+    justify-content: center;
+    
+    
+}
+.partnerSection h3{
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    /* border: 2px solid red; */
+    width: 350px;
+    left: 40%;
+    /* border-bottom: 3px solid ; */
+
+}
+.partnerSection h3::after{
+    content: '';
+    display: block;
+    border-bottom: 4px solid;
+    border-image: linear-gradient(to right,#235789, #C1292E) 2;
+    width: 50px; /* Adjust the width as desired */
+    position: absolute;
+    padding-bottom: 10px;
+    /* bottom: 20; */
+    left: 150px;
+    height: 2px;
+   
+}
+.slider{
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    
+}
+.slide img {
+    height: 100%;
+    width: 250px;
+}
+.slider .slider-track{
+    animation: scroll 50s linear infinite ;
+    display: flex;
+    /* width: calc(3000px * 5); */
+    /* border: 2px dashed rgb(16, 117, 26); */
+    align-items: end;
+    justify-content: baseline;
+}
+.slider .slide{
+    cursor: pointer;
+    border: 2px solid #235789;
+    border-image: linear-gradient(to left, #235789, #C1292E) 2;
+    margin: 10px;
+    height: 100px;
+    width: 250px;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 7));
+    }
+}
+footer{
+    height: 50vh;
+    background-color: #2C1320;
+}
+

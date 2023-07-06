@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .parent-element {
+      position: relative;
+    }
+    
+    .parent-element::after {
+      content: '';
+      display: block;
+      border-bottom: 2px solid black;
+      width: 25px; /* Adjust the width as desired */
+      position: absolute;
+      bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent-element">
+    Content
+  </div>
+</body>
+</html>
