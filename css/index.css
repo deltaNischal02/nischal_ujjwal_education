@@ -11,6 +11,15 @@ html {
     height: 100vh;
     z-index: 1;
     background-color: #f7f7f7;
+    background-image: url(../images/Expert\ Instructor.jpg);
+    background-repeat: no-repeat;
+  background-size: cover;
+  /* Additional properties to adjust positioning if needed */
+  background-position: center center;
+  object-fit: fill;
+  opacity: 10;
+  background-position: center top 2px;
+
 }
 
 .image-container {
