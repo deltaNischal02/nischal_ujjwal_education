@@ -21,4 +21,4 @@ function updateNumber(){
         updateNumber3.textContent= number3 + "+" +"";
     }
 }
-setInterval(updateNumber,11);
+setInterval(updateNumber,110);

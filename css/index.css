@@ -1,6 +1,11 @@
 * {
     margin: 0;
+    
     /* width: 100%; */
+    /* overflow: hidden; */
+}
+body{
+    /* overflow: hidden; */
 }
 
 html {
@@ -19,6 +24,7 @@ html {
   /* object-fit: fill; */
   /* opacity: 50%; */
   background-position: center top 0px;
+  /* transform: skewY(50%); */
 
 }
 
@@ -164,7 +170,7 @@ hr {
 
 /* css for lowerSection */
 .lowerSection {
-    height: 100vh;
+    height: 70vh;
     z-index: -1;
     color: yellow;
 }
@@ -186,7 +192,7 @@ hr {
 .increase-Number-Container{
     height: 100%;
     width: auto;
-    border: 2px rgb(0, 0, 0) solid;
+    
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -197,10 +203,29 @@ hr {
     box-shadow: inset 1px 5px 10px ;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    border-radius: 50px;
 }
 .Number-Container img{
     height: 50%;
+    display: block;
+}
+.TextAndNumber{
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    flex-direction: column;
+}
+.number, .number2, .number3{
+    color: #DF9A57;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Text{
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-size: 25px;
+    color: white;
 }
 
 
@@ -394,5 +419,6 @@ hr {
 footer{
     height: 50vh;
     background-color: #2C1320;
+    
 }
 
