@@ -1,8 +1,5 @@
 * {
   margin: 0;
-
-  /* width: 100%; */
-  /* overflow: hidden; */
 }
 
 html {
@@ -111,7 +108,7 @@ hr {
   50% {
     content: "FUTURE.";
     color: #235789;
-    width: 9ch;
+    width: 8ch;
   }
 
   75% {
@@ -136,10 +133,6 @@ hr {
   font-size: 25px;
   top: 500px;
 }
-/* .estd h6{
-    top: -80px;
-    position: absolute;
-} */
 
 .Learnmore {
   position: relative;
@@ -148,8 +141,6 @@ hr {
   justify-content: center;
   flex-direction: column;
   top: 625px;
-
-  /* border: 2px dashed red; */
 }
 
 .Learnmore img,
