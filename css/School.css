@@ -3,6 +3,8 @@
 }
 /* card2 css */
 .SchoolCard{
+    position: relative;
+    top: 100px;
    display: grid;
    grid-template-columns: repeat(4, 5fr); /* Creates 4 equal-width columns */
   grid-gap: 40px;
