@@ -405,10 +405,13 @@ hr {
 .grid-item :hover{
   /* box-shadow: 1px 2px 10px; */
   transform: scale(1.1);
+  transition: all 0.5s;
 }
 
 /* Student Section starts here */
-.
+
+/* School Section Starts here */
+
 
 
 
