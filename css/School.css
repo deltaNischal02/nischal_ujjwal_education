@@ -1,10 +1,15 @@
 .School{
-    height: 500vh;
+    height: 100vh;
 }
 /* card2 css */
+.SchoolCard{
+   display: grid;
+   grid-template-columns: repeat(4, 5fr); /* Creates 4 equal-width columns */
+  grid-gap: 40px;
+}
 .card2 {
     --bg: #f7f7f8;
-    --hover-bg: #FFE5F4;
+    --hover-bg: rgb(198, 212, 225);
     --hover-text: #e5e5e5;
     max-width: 40ch;
     text-align: center;
@@ -20,6 +25,7 @@
     justify-content: center;
     align-items: center;
     gap: 1em;
+    cursor: pointer;
   }
   .card2 img{
     height: 100%;
@@ -61,10 +67,7 @@
     top: 0;
     font-size: 1.2em;
 }
-.Date{
-    top: 10;
-    font-size: 1.2em;
-}
+
 
 .card2:hover {
     background: var(--hover-bg);
